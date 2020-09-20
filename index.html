@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>Niomads</title>
+<meta charset="utf-8">
+<!-- Become a digital nomad today -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="title" content="Niomads - Become a digital nomad today">
+<meta name="description" content="Niomads finds you the best places in the world to live, work and travel as a remote worker. Every second, it collects millions of data points on thousands of cities around the world, from cost of living, temperature to safety and internet speed. With that data, you can have an idea of where it's best for you to go.">
+<meta name="keywords" content="digital nomad, digital nomads, entreprenour, developer, software, freelance">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main-color.css" id="colors">
+<link rel="icon" type="image/png" href="images/logo.png">
+
+
+</head>
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header Container
+================================================== -->
+<div class="clearfix"></div>
+<!-- Header Container / End -->
+<!-- Banner
+================================================== -->
+<div class="main-search-container dark-overlay">
+	<div class="main-search-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Live anywhere</h2>
+					<h4>Join millions of people working remotely while living anywhere in the world</h4>
+
+					<div class="main-search-input">
+
+						<div class="main-search-input-item">
+							<input type="text" placeholder="Enter your email below and we will contact you soon" value=""/>
+						</div>
+
+						<button class="button" onclick="window.location.href='thanks.html'">Join to Niomads</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Video -->
+	<div class="video-container">
+		<video poster="images/main-search-video-poster.jpg" loop autoplay muted>
+			<source src="images/main-search-video.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+</div>
+
+<div class="col-md-12">
+	<div class="copyrights">© 2020 Niomads. All Rights Reserved.</div>
+</div>
+<!-- Footer / End -->
+
+<!-- Scripts
+================================================== -->
+<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-migrate-3.1.0.min.js"></script>
+<script type="text/javascript" src="scripts/mmenu.min.js"></script>
+<script type="text/javascript" src="scripts/chosen.min.js"></script>
+<script type="text/javascript" src="scripts/slick.min.js"></script>
+<script type="text/javascript" src="scripts/rangeslider.min.js"></script>
+<script type="text/javascript" src="scripts/magnific-popup.min.js"></script>
+<script type="text/javascript" src="scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="scripts/counterup.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/tooltips.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+<!-- Google Autocomplete -->
+<script>
+  function initAutocomplete() {
+    var input = document.getElementById('autocomplete-input');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+
+    autocomplete.addListener('place_changed', function() {
+      var place = autocomplete.getPlace();
+      if (!place.geometry) {
+        return;
+      }
+    });
+
+	if ($('.main-search-input-item')[0]) {
+	    setTimeout(function(){ 
+	        $(".pac-container").prependTo("#autocomplete-container");
+	    }, 300);
+	}
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initAutocomplete"></script>
+
+<!-- Style Switcher
+================================================== -->
+<script src="scripts/switcher.js"></script>
+
+<div id="style-switcher">
+	<h2>Color Switcher <a href="#"><i class="sl sl-icon-settings"></i></a></h2>
+	
+	<div>
+		<ul class="colors" id="color1">
+			<li><a href="#" class="main" title="Main"></a></li>
+			<li><a href="#" class="blue" title="Blue"></a></li>
+			<li><a href="#" class="green" title="Green"></a></li>
+			<li><a href="#" class="orange" title="Orange"></a></li>
+			<li><a href="#" class="navy" title="Navy"></a></li>
+			<li><a href="#" class="yellow" title="Yellow"></a></li>
+			<li><a href="#" class="peach" title="Peach"></a></li>
+			<li><a href="#" class="beige" title="Beige"></a></li>
+			<li><a href="#" class="purple" title="Purple"></a></li>
+			<li><a href="#" class="celadon" title="Celadon"></a></li>
+			<li><a href="#" class="red" title="Red"></a></li>
+			<li><a href="#" class="brown" title="Brown"></a></li>
+			<li><a href="#" class="cherry" title="Cherry"></a></li>
+			<li><a href="#" class="cyan" title="Cyan"></a></li>
+			<li><a href="#" class="gray" title="Gray"></a></li>
+			<li><a href="#" class="olive" title="Olive"></a></li>
+		</ul>
+	</div>
+		
+</div>
+<!-- Style Switcher / End -->
+
+
+</body>
+</html>
